@@ -3,7 +3,7 @@ layout: default
 title: elementfrompoint在延迟加载中的运用
 ---
 
-### Document Interface
+### 接口信息
 
 ```C++
 partial interface Document {
