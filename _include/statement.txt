@@ -1,0 +1,4 @@
+<div class="statement">
+  <p><strong time="{{page.date}}">日期：</strong>{{page.date}}</p>
+  <p>作者: {{site.author_info}}</p>
+</div>
