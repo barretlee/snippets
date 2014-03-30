@@ -13,6 +13,8 @@ if(window.location.href.indexOf("?edit")>-1){
 	var span = document.getElementById("shareList").getElementsByTagName("span");
 	for(var i = 0; i < span.length; i++){
 		span[i].style.display = "inline";
+		var t = span[i].children[0].href;
+		span[i].children[0].href = t.replace(/(\d+)\//g, "$1-").replace(/\/$/, ".md");
 	}
 }
 	

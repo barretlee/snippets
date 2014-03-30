@@ -1,6 +1,6 @@
 baseurl: /
 markdown: rdiscount
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:day/:title/
 
 edit_path: https://github.com/barretlee/Micro-Share/edit/gh-pages/_posts
 author: Barret Lee
