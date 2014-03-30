@@ -82,8 +82,10 @@ code {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
+    color: #4A75B5;
 }
+a:hover {background: #4A75B5; text-decoration:underline; color:#FFF;}
 
 img {
     margin-left: 10px;
@@ -107,8 +109,7 @@ hr {
 
 #shareList li {padding-left: 8px;line-height: 24px;}
 #shareList li time {color: #AAA;font-family: Monaco, "Courier New", monospace;}
-#shareList li a{color: #4A75B5; border:none;}
-#shareList li a:hover {background: #4A75B5; text-decoration:underline; color:#FFF;}
+#shareList li a{ border:none;}
 
 .home-menu { position:fixed; top:15px; left:15px; z-index:5; font-size:0; _position:absolute;}
 .home-menu-icon { line-height:38px; padding:0 8px; display:inline-block; color:#fff; font-size:18px;  background:#000; }
