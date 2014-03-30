@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 baseurl: /shares
-=======
-baseurl: /
->>>>>>> a53e4f0d04b24803b666ab52000ffa7100430200
 markdown: rdiscount
 permalink: /:year/:month/:title/
 
