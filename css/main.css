@@ -81,6 +81,10 @@ code {
     overflow-x: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 img {
     margin-left: 10px;
     display: block;
