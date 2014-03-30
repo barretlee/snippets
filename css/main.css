@@ -119,3 +119,12 @@ hr {
 #shareList li time {color: #AAA;font-family: Monaco, "Courier New", monospace;}
 #shareList li a{color: #4A75B5; border:none;}
 #shareList li a:hover {background: #4A75B5; text-decoration:underline; color:#FFF;}
+
+.home-menu { position:fixed; top:15px; left:15px; z-index:5; font-size:0; _position:absolute;}
+.home-menu-icon { line-height:38px; padding:0 8px; display:inline-block; color:#fff; font-size:18px;  background:#000; }
+.home-follow { margin-left:2px; line-height:38px; padding:0 8px; display:inline-block; color:#fff; font-size:18px; background:#000;  }
+.home-menu-icon:hover,
+.home-follow:hover { color:#fff; text-decoration:none; }
+.home-contact { color:#fff; margin-top:2px; background:#000; padding:8px 0 7px; text-align:center; display:none;}
+.home-contact a { width:30px; display:inline-block; }
+.home-contact img { width:18px; }
