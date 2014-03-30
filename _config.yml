@@ -1,4 +1,4 @@
-baseurl: /shares
+baseurl: /
 markdown: rdiscount
 permalink: /:year/:month/:title/
 
