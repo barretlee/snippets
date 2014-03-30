@@ -2,7 +2,7 @@
 layout: default
 title: 微分享
 ---
-<h2>{{page.title}}</h2>
+<h2>{{page.title}}<a href="{{site.edit_pate}}" id="newPost" style="display:none;">new post</a></h2>
 <ul id="shareList">
 	{% for post in site.posts %}
 	<li><time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time> » <a href="{{ post.url }}">{{ post.title }}</a><span class="edit"><a href="{{site.edit_path}}{{post.url}}">edit</a></span></li>
@@ -16,6 +16,9 @@ if(window.location.href.indexOf("?edit")>-1){
 		var t = span[i].children[0].href;
 		span[i].children[0].href = t.replace(/(\d+)\//g, "$1-").replace(/\/$/, ".md");
 	}
+	var newPost = document.getElementById("newPost");
+	newPost.href = newPost.href.replace("edit", "new");
+	newPost.style.display = "inline";
 }
 	
 </script>
