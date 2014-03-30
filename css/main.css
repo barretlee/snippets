@@ -115,6 +115,8 @@ hr {
 .home-follow { margin-left:2px; line-height:38px; padding:0 8px; display:inline-block; color:#fff; font-size:18px; background:#000;  }
 .home-menu-icon:hover,
 .home-follow:hover { color:#fff; text-decoration:none; }
-.home-contact { color:#fff; margin-top:2px; background:#000; padding:8px 0 7px; text-align:center; display:none;}
+.home-contact { color:#fff; height:20px; margin-top:2px; background:#000; padding:8px 0 7px; text-align:center; display:none;}
 .home-contact a { width:30px; display:inline-block; }
-.home-contact img { width:18px; }
+.home-contact img { width:18px; margin:0; }
+
+.home-icon-con:hover .home-contact { display:block;};
