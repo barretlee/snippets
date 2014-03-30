@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h2 id="shareList">{{ page.title }}<span class="edit"><a href="{{site.edit_path}}{{page.url}}">edit</a></span></h2>
+<h2 id="pageTitle">{{ page.title }}<span class="edit"><a href="{{site.edit_path}}{{page.url}}">edit</a></span></h2>
 <div class="statement">
 	<p><strong time="{{page.date|date:%Y-%m-%d}}">时间：</strong>{{page.date|date:%Y-%m-%d}}</p>
 	<p><strong>作者: </strong>{{site.author_info}}</p>
@@ -24,7 +24,7 @@ window.duoshuoQuery = {short_name:"barretlee"};
 })();
 
 if(window.location.href.indexOf("?edit")>-1){
-	var span = document.getElementById("shareList").getElementsByTagName("span");
+	var span = document.getElementById("pageTitle").getElementsByTagName("span");
 	span[0].style.display = "inline";
 
 	var t = span[0].children[0].href;
