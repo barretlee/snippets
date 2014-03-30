@@ -118,6 +118,7 @@ hr {
 .home-follow:hover { color:#fff; text-decoration:none; }
 .home-contact { color:#fff; height:20px; margin-top:2px; background:#000; padding:8px 0 7px; text-align:center; display:none;}
 .home-contact a { width:30px; display:inline-block; }
+.home-contact a:hover {background:none;}
 .home-contact img { width:18px; margin:0; }
 
 .home-icon-con:hover .home-contact { display:block;};
