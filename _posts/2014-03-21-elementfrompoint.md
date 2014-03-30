@@ -1,14 +1,12 @@
 ---
 layout: page
-title: elementfrompoint
+title: 一个所见即所得的博客
 ---
 
+最简单的博客就是，你只需要写，其他的啥都不用管。github 就能够做到。
 
-	partial interface Document {
-	  Element? elementFromPoint(double x, double y);
-	  sequence<Element> elementsFromPoint(double x, double y);
-	  CaretPosition? caretPositionFromPoint(double x, double y);
-	};
+本博客就是如此，只要在 url 后面加上`?edit`，立马就可以编辑内容，十分简洁。
 
+因为这个微分享的博客是放在 github 上，每篇文章的地址和 github 存在一个对应关系，所以我为每篇文章都加了对应的 edit 链接，同时也在首页加了一个 new post 的链接，方便加入新的文章。
 
-[Full Screen](http://jsfiddle.net/barretlee/Ldtj7/embedded/result/)
+github 采用的是 markdown 语法，写起来很轻松，感兴趣的童鞋可以从右上角点进这个 github 地址，fork 代码后自行研究。
