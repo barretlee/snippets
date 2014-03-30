@@ -117,5 +117,5 @@ hr {
 
 #shareList li {padding-left: 8px;line-height: 24px;}
 #shareList li time {color: #AAA;font-family: Monaco, "Courier New", monospace;}
-#shareList li a{color: #4A75B5; text-decoration:none;}
-#shareList li a:hover {background: #4A75B5; text-decoration:underline;}
+#shareList li a{color: #4A75B5; border:none;}
+#shareList li a:hover {background: #4A75B5; text-decoration:underline; color:#FFF;}
