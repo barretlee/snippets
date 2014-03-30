@@ -90,7 +90,7 @@ a {
     color: black;
 }
 
-.forkme:hover {background-color:none;}
+.forkme:hover {background:none;}
 
 a:hover {
 	background-color: LightGrey;
