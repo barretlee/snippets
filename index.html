@@ -3,8 +3,17 @@ layout: default
 title: 微分享
 ---
 <h2>{{page.title}}</h2>
-<ul>
+<ul id="shareList">
 	{% for post in site.posts %}
-	<li>{{ post.date | date_to_string }} » <a href="{{ post.url }}">{{ post.title }}</a></li>
+	<li>{{ post.date | date_to_string }} » <a href="{{ post.url }}">{{ post.title }}</a><span class="edit"><a href="{{site.edit_path}}{{page.url}}">edit</a></span></li>
 	{% endfor %}
 </ul>
+<script type="text/javascript">
+if(window.location.href.indexOf("?edit")>-1){
+	var span = document.getElementById("shareList").getElementsByTagName("span");
+	for(var i = 0; i < span.length; i++){
+		span.style.display = "inline";
+	}
+}
+	
+</script>
