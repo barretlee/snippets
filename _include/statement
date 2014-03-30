@@ -1,0 +1,4 @@
+<div class="statement">
+  <p><strong time="{{page.date}}">���ڣ�</strong>{{page.date}}</p>
+  <p>����: {{site.author_info}}</p>
+</div>
