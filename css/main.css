@@ -73,12 +73,14 @@ pre {
     width: 95%;
 }
 
-
 code {
     font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
     font-size: 90%;
-    overflow:hidden;
-    overflow-x: auto;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 0 6px;
+    background: #EFEFEF;
+    margin: 0 3px;
 }
 
 a {
