@@ -1,0 +1,7 @@
+baseurl: /shares/
+markdown: rdiscount
+permalink: /:year/:month/:title/
+
+author: Barret Lee
+email: barret.china@gmail.com
+author_info: <a href="http://barretlee.com">Barret Lee</a>
