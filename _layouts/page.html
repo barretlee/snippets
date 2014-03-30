@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<div class="statement">
+	<p><strong time="{{page.date|date:%Y-%m-%d}}">时间：</strong>{{page.date|date:%Y-%m-%d}}</p>
+	<p><strong>作者: </strong>{{site.author_info}}</p>
+</div>
+
+{{ content }}

@@ -12,11 +12,11 @@ body {
     *overflow-x: hidden;
 }
 
-H1 {
+h1 {
     font-family: STKaiti, "Kaiti SC", "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-H2 {
+h2 {
     font-family: STKaiti, "Kaiti SC", "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-bottom: 60px;
     margin-bottom: 40px;
@@ -28,7 +28,7 @@ H2 {
 }
 
 
-H3 {
+h3 {
     font-family: STKaiti, "Kaiti SC", "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -39,7 +39,7 @@ H3 {
 }
 
 
-H4 {
+h4 {
     font-family: STKaiti, "Kaiti SC", "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-top: 40px;
     margin-bottom: 30px;

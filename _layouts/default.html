@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-　　<head>
-　　　　<meta charset="utf-8" />
-　　　　<title>{{ page.title }}</title>
-	<link rel="stylesheet" src="../css/main.css" />
-　　</head>
-　　<body>
-	## {{ page.title }}
-	{% include statement %}
-　　　　{{ content }}
-　　</body>
+<head>
+<meta charset="utf-8" />
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+</head>
+
+<body>
+	{{ content }}
+</body>
 </html>
