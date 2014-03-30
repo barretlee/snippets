@@ -77,6 +77,8 @@ pre {
 code {
     font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
     font-size: 90%;
+    overflow:hidden;
+    overflow-x: auto;
 }
 
 
@@ -88,6 +90,7 @@ a {
     color: black;
 }
 
+.forkme:hover {background-color:none;}
 
 a:hover {
 	background-color: LightGrey;
