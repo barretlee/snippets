@@ -81,20 +81,6 @@ code {
     overflow-x: auto;
 }
 
-
-a {
-    text-decoration: none;
-    cursor: crosshair;
-    border-bottom: 1px dashed Red;
-    padding: 1px;
-    color: black;
-}
-
-a:hover {
-	background-color: LightGrey;
-}
-
-
 img {
     margin-left: 10px;
     display: block;
