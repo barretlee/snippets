@@ -1,5 +1,4 @@
-baseurl: http://barretlee.github.io/shares
-host: barretlee.github.io
+baseurl: /shares/
 markdown: rdiscount
 permalink: /:year/:month/:title/
 
