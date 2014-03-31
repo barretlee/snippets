@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: webview中的点击高亮问题
 ---
 
