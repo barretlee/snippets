@@ -65,14 +65,17 @@ blockquote {
 pre {
     font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
     font-size: 75%;
-    border: solid 1px #CC929A;
+    border: dotted 1px #CC929A;
     background-color: Ivory;
     padding: 5px;
     line-height: 130%;
     margin-left: 10px;
     width: 95%;
 }
-
+pre code {
+    border: none;
+    background: none;
+}
 code {
     font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
     font-size: 90%;
