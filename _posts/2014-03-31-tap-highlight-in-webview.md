@@ -13,13 +13,13 @@ css 中有个属性叫做 -webkit-tap-highlight-color ，顾名思义，就是�
 
 解决方案：
 
-  .obj {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+    .obj {-webkit-tap-highlight-color:rgba(0,0,0,0);}
     
 有些机子可能比较坑爹，rgba 这种方式支持的不是很好，我们可以用 transparent 来给他透明化。
 
-  .obj {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; /* For some Androids */
-  }
+    .obj {
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-tap-highlight-color: transparent; /* For some Androids */
+    }
   
 小小分享。（完）
