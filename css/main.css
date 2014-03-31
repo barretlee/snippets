@@ -71,6 +71,8 @@ pre {
     line-height: 130%;
     margin-left: 10px;
     width: 95%;
+    overflow:hidden;
+    overflow-x:auto;
 }
 pre code {
     border: none;
