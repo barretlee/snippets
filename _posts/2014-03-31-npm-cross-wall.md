@@ -17,7 +17,7 @@ registry 参数的作用就是指向需要 download 的仓库。 cnpm 跟国外�
 
 当然，你也可以简单点搞：
 
-	npm config set registry "http://r.npmjs.org"
+	npm config set registry="http://r.cnpmjs.org"
 
 在配置中直接指定源头，下次就没有必要使用 `--registry` 参数了。配置好了之后，npm 就指向了国内的仓库。
 
@@ -30,7 +30,7 @@ registry 参数的作用就是指向需要 download 的仓库。 cnpm 跟国外�
 代理，在配置中设置代理参数：
 
 	# 全局路径，也就是 npm install -g，这里 -g 的意义
-	npm config set prefix "c:\nodejs"
+	npm config set prefix="c:\nodejs"
 
 	# 一般使用 goagent 翻墙，他的默认端口是 8087
 	npm config set proxy=http://127.0.0.1:8087
