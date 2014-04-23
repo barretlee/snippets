@@ -1,6 +1,7 @@
 ---
 layout: page
 title: webview中的点击高亮问题
+tags: webview highlight tap
 ---
 
 这两天在做一个淘金币的小游戏，测试页面的时候还挺正常的，放到webview（嵌入诸如微信、微博等客户端的网页容器）中就出问题了。

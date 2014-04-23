@@ -1,6 +1,7 @@
 ---
 layout: page
 title: npm穿墙
+tags: npm proxy
 ---
 
 GWF 很给力，很多东西都能墙掉，但是把 npm 也纳入黑名单，不知道 GWFer 是怎么想的。翻墙翻了好多年了，原理其实也挺简单的，proxy 嘛！

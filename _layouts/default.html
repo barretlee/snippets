@@ -22,6 +22,9 @@
 	<a href="https://github.com/barretlee/Micro-Share" class="forkme" style="position: absolute; top:-1px; right: 0; border: 0; z-index:99;_display:none;cursor:pointer;"  target="_blank"><img src="/imgs/forkme.png" style="margin:0" alt="Fork me on GitHub"></a>
 	{{ content }}
 
+	<div class="footer">
+	    <small>&copy;Copyright 2014 By <a href="http://barretlee.com/about.html" target="_blank">Barret Lee</a></small>
+	</div>
 	<div style="display:none;">
 		<script type="text/javascript">
 	        if(window.console&&window.console.log) {
@@ -32,7 +35,13 @@
 		    ~function(){
 		        var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
 		        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F14788c3dc5c09194b1bad2d5ded36949' type='text/javascript'%3E%3C/script%3E"));
-		    }()
+		    }();
+
+		    document.onkeydown = function(evt){
+		    		var href = window.location.href;
+		    		if(evt.keyCode == 13 && evt.shiftKey && evt.ctrlKey && window.location.href.indexOf("?edit") == -1)
+		    			window.location.href = window.location.href + "?edit";
+		    }
 		</script>
 	</div>
 </body>

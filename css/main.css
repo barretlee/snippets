@@ -130,3 +130,23 @@ hr {
 .home-contact img { width:18px; margin:0; }
 
 .home-icon-con:hover .home-contact { display:block;};
+
+
+#tags {
+    
+}
+
+#tags span {
+    border: 1px solid #CCC;
+    background: #EFEFEF;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    padding: 0px 8px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.page-paginator {
+    margin: 10px 0;
+}

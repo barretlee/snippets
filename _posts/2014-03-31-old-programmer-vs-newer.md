@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 老程序员Vs新程序员
+tags: talk
 ---
 
 > **经验越足、知道的越多编程越慢**<br />

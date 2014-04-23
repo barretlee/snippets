@@ -1,7 +1,7 @@
 ---
 layout: page
 title: cloneNode/importNode Bug in Old Chrome
-tag: bug chrome checkbox cloneNode
+tags: bug chrome checkbox cloneNode
 ---
 
     support.checkClone = div.cloneNode(true).cloneNode(true).lastChild.checked;

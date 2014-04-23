@@ -9,6 +9,26 @@ layout: default
 
 {{ content }}
 
+<div id="tags" style="margin-top:40px;padding: 20px 0;border-top: 1px solid #CCC;">
+	标签：
+{% for tag in page.tags %}
+    <span>{{ tag }}</span> 
+{% endfor %}
+</div>
+
+<div class="page-paginator">
+	<span title="{{page.previous.title}}">
+	{% if page.previous.url %} 
+		上一篇：<a href="{{page.previous.url}}">{{page.previous.title}}</a>
+    {% endif %}
+	</span><br />
+	<span title="{{page.next.title}}">
+        {% if page.next.url %} 
+		下一篇：<a href="{{page.next.url}}">{{page.next.title}}</a>
+        {% endif %} 
+	</span>
+</div>
+
 <div class="ds-thread" itemprop="comment"></div>
 
 

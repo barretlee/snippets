@@ -1,7 +1,7 @@
 ---
 layout: page
 title: toString & valueOf
-tag: wtf valueOf
+tags: wtf valueOf
 ---
 
     [] == ![] // true
