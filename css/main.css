@@ -1,5 +1,6 @@
 html {
 	*overflow-x: hidden;
+	background:#F5F5D5;
 }
 .container {
     font-family: "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -94,6 +95,7 @@ border-style: solid;
 text-shadow: 0 1px #FFF;
 line-height: 180%;
 /* margin-left: 0.8em; */
+width:90%;
 }
 pre code {
     border: none;
