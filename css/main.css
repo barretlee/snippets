@@ -127,6 +127,10 @@ img {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
+    border: 0.7em solid #E0DFCC;
+-moz-border-radius: 0.7em;
+-webkit-border-radius: 0.7em;
+border-radius: 0.7em;
 }
 
 
