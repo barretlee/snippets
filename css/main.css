@@ -95,7 +95,7 @@ border-style: solid;
 text-shadow: 0 1px #FFF;
 line-height: 180%;
 /* margin-left: 0.8em; */
-width:90%;
+width:auto;
 }
 pre code {
     border: none;
