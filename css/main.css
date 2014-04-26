@@ -158,7 +158,7 @@ hr {
     margin: 10px 0;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:641px){
   #weiboBox {display:none;}
   .container {
       padding:2%;
