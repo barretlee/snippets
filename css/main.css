@@ -64,10 +64,13 @@ li {
 
 
 blockquote {
-    border-left: 4px lightgrey solid;
     padding-left: 5px;
     margin-left: 20px;
     padding-left: 20px;
+    border: 1px dotted #CCC;
+border-left: 8px #D3D3D3 solid;
+background: #F5F5F5;
+padding-right: 5px;
 }
 
 
