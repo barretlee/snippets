@@ -4,13 +4,14 @@ html {
 .container {
     font-family: "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 18px;
-    margin: 5% 20% 5% 5%;
+    margin: 60px 20% 5% 5%;
     padding: 2% 5% 5% 5%;
     width: 50%;
     line-height: 150%;
     border: 1px solid LightGrey;
     *overflow-x: hidden;
     position:relative;
+    max-width:700px;
 }
 #weiboBox {
     width: 45%;
@@ -156,3 +157,21 @@ hr {
 .page-paginator {
     margin: 10px 0;
 }
+
+@media screen and (max-width:480px){
+  #weiboBox {display:none;}
+  .container {
+      padding:2%;
+      width:90%;
+      margin:70px 0;
+      max-width:auto;
+  }
+  html,body {
+      overflow-x:hidden;
+  }
+}
+
+
+
+
+
