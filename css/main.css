@@ -2,16 +2,24 @@ html {
 	*overflow-x: hidden;
 }
 body {
+    position: relative;
+}
+.container {
     font-family: "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 18px;
-    margin: 5% 20% 5% 20%;
+    margin: 5% 20% 5% 5%;
     padding: 2% 5% 5% 5%;
     width: 50%;
     line-height: 150%;
     border: 1px solid LightGrey;
     *overflow-x: hidden;
 }
-
+#weiboBox {
+    width: 20%;
+    top:7%;
+    right: 5%;
+    position:absolute;
+}
 h1 {
     font-family: STKaiti, "Kaiti SC", "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
