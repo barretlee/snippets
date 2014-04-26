@@ -163,12 +163,23 @@ hr {
   .container {
       padding:2%;
       width:90%;
-      margin:70px 0;
+      margin:70px 3%;
       max-width:auto;
+      font-size:14px;
   }
   html,body {
       overflow-x:hidden;
   }
+  h2 {
+    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
 }
 
 
