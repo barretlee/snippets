@@ -1,6 +1,6 @@
 ---
 layout: page
-title: jekyll中gsup未定义的错误
+title: jekyll中gsub未定义的错误
 tags: error jekyll
 ---
 
