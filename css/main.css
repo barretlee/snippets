@@ -187,10 +187,12 @@ hr {
       margin:70px 3%;
       max-width:auto;
       font-size:14px;
+      overflow:hidden;
   }
   html,body {
       overflow-x:hidden;
   }
+  pre code {font-size:12px;}
   h2 {
     margin-bottom: 30px;
     margin-bottom: 20px;
