@@ -2,7 +2,11 @@
 layout: default
 title: 微分享
 ---
-<h2>{{page.title}}<a href="{{site.edit_path}}" id="newPost" target="_blank" style="display:none; font-size:12px; color:#666; margin-left:15px;">new post</a></h2>
+<h2>
+  {{page.title}}
+  <a href="{{site.edit_path}}" id="newPost" target="_blank" style="display:none; font-size:12px; color:#666; margin-left:15px;">new post</a>
+  <span style="color:#666;font-size:13px;margin-left:10px;">想法，随笔，思考，感叹，瞬间，笔记...</span>
+</h2>
 <ul id="shareList">
 	{% for post in site.posts %}
 	<li><time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time> » <a href="{{ post.url }}">{{ post.title }}</a><span class="edit"><a href="{{site.edit_path}}{{post.url}}">edit</a></span></li>
