@@ -77,14 +77,31 @@ pre {
     background-color: Ivory;
     padding: 5px;
     line-height: 130%;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     width: 95%;
     overflow:hidden;
     overflow-x:auto;
+    background-color: #F5F2F0;
+padding: 1em;
+/* margin: 2em 2em; */
+font-family: Consolas, Monaco, 'Andale Mono', monospace;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+border-width: 1em;
+border-color: #E0DFCC;
+border-style: solid;
+text-shadow: 0 1px #FFF;
+line-height: 180%;
+/* margin-left: 0.8em; */
 }
 pre code {
     border: none;
     background: none;
+    margin-top: 1em;
+line-height: 180%;
+margin-left: 0.8em;
+font-size: 1.6em;
 }
 code {
     font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
