@@ -1,6 +1,6 @@
 ---
 layout: page
-title: jekyl安装不了？
+title: jekyll安装不了？
 tags: ruby jekyll
 ---
 
