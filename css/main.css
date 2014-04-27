@@ -137,6 +137,7 @@ img {
 -moz-border-radius: 0.7em;
 -webkit-border-radius: 0.7em;
 border-radius: 0.7em;
+max-width:90%;
 }
 
 
