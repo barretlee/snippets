@@ -44,7 +44,7 @@ commit 后面的一串字符就是 SHA 字符。
 
 原因是你本地版本要落后于服务器上的版本（git reset 回归了嘛），如果想覆盖服务器上版本，应该加 `-f` ，强制提交，
 
-   git push -u master origin -f
+    git push -u master origin -f
    
 不过这样的操作要谨慎了，先把修改的位置备份（拿出来，复制到文件夹外），完成上述操作之后再复制回来处理。
 （完）
