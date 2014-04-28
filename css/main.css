@@ -129,8 +129,6 @@ a:hover {background: #4A75B5; text-decoration:underline; color:#FFF;}
 img {
     margin-left: 10px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     border: 0.7em solid #E0DFCC;
