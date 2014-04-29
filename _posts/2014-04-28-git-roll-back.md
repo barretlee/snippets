@@ -6,7 +6,7 @@ tags: git CMS
 
 今天 github 上操作遇到了一个很头疼的问题，在某个文件中进行了误操作（有可能是加入了BOM头），diff 没看到差异，但是线上就是不正常显示。修改半天没用，只要回退版本。
 
-通过 `git log` 可以产看近期 commit 的信息：
+通过 `git log` 可以查看近期 commit 的信息：
 
     commit bcdfd65ba3f16a0647e7687f92cca25d51738d2e
     Author: Barret Lee <barret.china@gmail.com>
@@ -42,7 +42,7 @@ commit 后面的一串字符就是 SHA 字符。
     hint: 'git pull ...') before pushing again.
     hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-原因是你本地版本要落后于服务器上的版本（git reset 回归了嘛），如果想覆盖服务器上版本，应该加 `-f` ，强制提交，
+原因是你本地版本要落后于服务器上的版本（git reset 回退了嘛），如果想覆盖服务器上版本，应该加 `-f` ，强制提交，
 
     git push -u master origin -f
    
