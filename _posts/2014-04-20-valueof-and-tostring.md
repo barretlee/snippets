@@ -1,6 +1,6 @@
 ---
 layout: page
-title: toString & valueOf
+title: [] == ![] 
 tags: wtf valueOf
 ---
 
