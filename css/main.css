@@ -78,6 +78,7 @@ border-radius:8px;
 
 pre {
     font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
+    text-indent:-1em;
     font-size: 75%;
     border: dotted 1px #CC929A;
     background-color: Ivory;
