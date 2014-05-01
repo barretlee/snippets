@@ -31,13 +31,13 @@ tags: git
     
 git branch 会看到上面的信息，这里还需要一步操作：
 
-    git checkout -b origin/2.0.0
+    git checkout -b 2.0.0
     
--b 的意思是 base，以当前分支为 base，新建一个名叫 origin/2.0.0 的分支，这里当然也可以使用其他的命名。此时再执行 git branch 就能看到：
+-b 的意思是 base，以当前分支为 base，新建一个名叫 2.0.0 的分支，这里当然也可以使用其他的命名。此时再执行 git branch 就能看到：
   
     $ git br
       master
-    * origin/2.0.0
+    * 2.0.0
     
 就 OK 了~
 
