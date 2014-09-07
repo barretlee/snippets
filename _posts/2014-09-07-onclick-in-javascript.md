@@ -24,13 +24,13 @@ open 页面，浏览器会跟踪事件源，如果不是外部设备输入的信
     // 点击页面后，出现弹窗
     document.onclick = function(){
       setTimeout(function(){
-        open("http://baidu.com")
+        open("http://barretlee.com")
       }, 1000);
     }
     // 点击页面后，出现未弹窗
     document.onclick = function(){
       setTimeout(function(){
-        open("http://baidu.com")
+        open("http://barretlee.com")
       }, 1001);
     }
 
@@ -40,7 +40,7 @@ open 页面，浏览器会跟踪事件源，如果不是外部设备输入的信
       var t = new Date*1; 
       while(new Date*1 - t < 1000){} 
       setTimeout(function(){
-        open("http://baidu.com")
+        open("http://barretlee.com")
       }, 1000)
     }
     
