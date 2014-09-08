@@ -48,8 +48,10 @@ if(window.location.href.indexOf("?edit")>-1){
 	span[0].style.display = "inline";
 
 	var t = span[0].children[0].href;
-	window.location.href = span[0].children[0].href = t.replace(/(\d+)\//g, "$1-").replace(/\/$/, ".md");
-	
+	document.onkeydown = function(evt){
+    	if(evt.keyCode == 13 && evt.shiftKey && evt.ctrlKey)
+    		window.location.href = span[0].children[0].href = t.replace(/(\d+)\//g, "$1-").replace(/\/$/, ".md");
+	}
 }
 	
 </script>
