@@ -127,7 +127,7 @@ a {
 }
 a:hover {background: #4A75B5; text-decoration:underline; color:#FFF;}
 
-img {
+#container img {
     margin-left: 10px;
     display: block;
     margin-top: 30px;
