@@ -4,7 +4,7 @@ title: 让身体残疾的人可以访问Web
 tags: 笔记 WAI
 ---
 
-> Web accessibility means that people with disabilities can use the Web.
+> Web accessibility means that people with disabilities can use the Web.<br />
 > 让身体残疾的人可以访问Web，这就是 Web Accessibility。
 
 在中国，有数以百万甚至千万计的人无法正常地使用网络，不是因为他们脑子不好使，也不是因为他们没钱没文化，而是他们用来感知这个世界的能力受到了先天或者后天的破坏。WAI（Web Accessibility inititive）这个议题在[1997年五月份](http://www.w3.org/WAI/history)被提上议案，至今已经形成了一个庞大的知识体系。
