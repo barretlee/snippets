@@ -3,7 +3,7 @@ layout: page
 title: 数据交给谁来解析，前端还是后端？
 tags: 问答 模板渲染
 ---
-
+[原文](https://cnodejs.org/topic/5476b1cc65e5a201268b9220#5477dc1c65e5a201268b929f)引用：
 <pre>
 首先，预编译跟前后端没有关系，预编译一样可以用于后端渲染。
 
