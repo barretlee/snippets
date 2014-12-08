@@ -24,5 +24,19 @@ tags: 问答 textarea 自适应
 - 上面算法适合等宽字体
 - 防止计算误差，使用 Math.ceil 函数，比较靠谱的方式是 Math.ceil(len / (width / fs) - 1)，可以少一行~
 
+当然，最简单的方式莫过于：
+
+    tt.onpropertychange = tt.oninput = function(){
+        this.style.height = this.scrollHeight;
+    };
+    
+虽然 css 也可以做到，但效果并不是很好：
+
+    .tt {
+        overflow-x: hide;
+        overflow-y: visible;
+        width: 300px;
+    }
+
 
 找个有 textarea 的页面，打开控制台，输入字符，验证下吧~
