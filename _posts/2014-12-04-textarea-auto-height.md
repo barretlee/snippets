@@ -11,7 +11,8 @@ tags: 问答 textarea 自适应
     var tt = document.getElementsByTagName("textarea").item(0), 
         len = tt.value.length,
         width = tt.clientWidth,
-        style = (window.getComputedStyle||function(a){return a.currentStyle})(tt, null),
+        style = (window.getComputedStyle
+                    ||function(a){return a.currentStyle})(tt, null),
         fs = parseInt(style['font-size']) || 12,
         lh = parseInt(style['line-height']) || fs * 1.2;
     
