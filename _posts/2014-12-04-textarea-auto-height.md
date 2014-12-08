@@ -20,7 +20,7 @@ tags: 问答 textarea 自适应
     
 这里需要注意的是：
 
-- line-height 可能是 normal/inhert 之类的值，所以最好加上一个默认值
+- line-height 可能是 normal/inherit 之类的值，所以最好加上一个默认值
 - 上面算法适合等宽字体
 - 防止计算误差，使用 Math.ceil 函数，比较靠谱的方式是 Math.ceil(len / (width / fs) - 1)，可以少一行~
 
