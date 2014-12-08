@@ -12,7 +12,7 @@ tags: 问答 textarea 自适应
         len = tt.value.length,
         width = tt.clientWidth,
         style = (window.getComputedStyle||function(a){return a.currentStyle})(tt, null),
-        fs = parseInt(style['font-size']),
-        lh = parseInt(style['line-height']);
+        fs = parseInt(style['font-size']) || 12,
+        lh = parseInt(style['line-height']) || fs * 1.2;
     
     tt.style.height = Math.ceil(len / (width / fs)) * lh + "px";
