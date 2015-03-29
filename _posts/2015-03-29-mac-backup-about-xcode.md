@@ -26,4 +26,4 @@ xcode-select -p
 sudo xcode-select --switch /Library/Developer/CommandLineTools
 ```
 
-验证方式：在命令行输入 `gcc`，如果没有报出之前的错误（xcode-select:error...) 就 ok 了。
+验证方式：在命令行输入 `gcc`，如果没有报出之前的错误（xcode-select: error: ...) 就 ok 了。
