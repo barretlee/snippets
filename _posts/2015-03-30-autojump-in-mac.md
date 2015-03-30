@@ -4,7 +4,7 @@ title: mac下的效率工具autojump
 tags: mac 效率 autojump
 ---
 
-IDE 用起来总是的不到满足，Mac 适合搞开发，我也十分喜欢 Mac 系统，当然可以说喜欢 Unix/Linux 系统。今天在 `.zshrc` 文件中添加了这么几行快捷命令：
+IDE 用起来总是得不到满足，Mac 适合搞开发，我也十分喜欢 Mac 系统，当然可以说喜欢 Unix/Linux 系统。今天在 `.zshrc` 文件中添加了这么几行快捷命令：
 
 
 ```bash
@@ -40,7 +40,7 @@ j node
 
 我很喜欢这个小工具，让我游荡于文件夹之间不费吹灰之力。
 
-安装：
+### 安装：
 
 - 建议安装 zsh
 - 建议安装 homebrew
@@ -57,4 +57,4 @@ j node
   ```
 - `source ~/.zshrc`
 
-Enjoy coding. :)
+**Enjoy coding. :)**
