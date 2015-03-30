@@ -45,16 +45,8 @@ j node
 1. 建议安装 zsh
 2. 建议安装 homebrew
 3. `brew install autojump`
-4. 在 `.zshrc` 中找到 `plugins= `，在后面添加 
-
-  ```bash
-  plugins=(git autojump)
-  ```
-5. 然后继续在上述文件中添加 
-
-  ```bash
-  `[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.s`
-  ```
+4. 在 `.zshrc` 中找到 `plugins= `，在后面添加 `plugins=(git autojump)`
+5. 然后继续在上述文件中添加 `[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.s`
 6. `source ~/.zshrc`
 
 Enjoy coding. :)
