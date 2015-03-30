@@ -1,6 +1,6 @@
 ---
 layout: page
-title: mac下的效率工具autojump
+title: Mac下的效率工具autojump
 tags: mac 效率 autojump
 ---
 
