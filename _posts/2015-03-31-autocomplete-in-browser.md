@@ -23,7 +23,8 @@ console.log(document.getElementById("passwordInput").value)
 每个 `input` 都有 `defaultView` 属性，这是 DOM 初始化的时候给它加上的，判断
 
 ```javascript
-input.defaultVale == input.value  // 如果相等则不处理，如果不相等则将 value 置为空
+input.defaultVale == input.value  
+// 如果相等则不处理，如果不相等则将 value 置为空
 ```
 
 感觉是，是靠谱的！
