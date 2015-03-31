@@ -20,10 +20,10 @@ console.log(document.getElementById("passwordInput").value)
 
 可以考虑这个方案：
 
-每个 `input` 都有 `defaultView` 属性，这是 DOM 初始化的时候给它加上的，判断
+每个 `input` 都有 `defaultValue` 属性，这是 DOM 初始化的时候给它加上的，判断
 
 ```javascript
-input.defaultVale == input.value  
+input.defaultValue == input.value  
 // 如果相等则不处理，如果不相等则将 value 置为空
 ```
 
