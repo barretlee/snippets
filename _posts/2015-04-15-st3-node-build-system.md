@@ -1,6 +1,6 @@
 ---
 layout: page
-title: sublime text 3没有node的build-system
+title: sublime text 3 没有node的build-system
 tags: ST3 node build-system
 ---
 
@@ -18,16 +18,16 @@ tags: ST3 node build-system
 not found file or fold `node`
 ```
 
-云云的错误。我们的 node 一般安装在 `/usr/local/bin/node` 这个地方，环境变量，如果没有修改的话应该是这些：
+云云的错误。我们的 node 一般安装在 `/usr/local/bin/node` 这个地方。而环境变量，如果没有修改的话应该是这些：
 
 ```bash
 /usr/bin:/usr/sbin/:/bin:/sbin
 ```
 
-你可以将 `/usr/local/bin/node` 加入到环境变量，可以这样
+你可以将 `/usr/local/bin/node` 加入到环境变量，也可以这样
 
 ```bash
 sudo ln -s /usr/local/bin/node /usr/bin/node
 ```
 
-OK，就这么愉快的搞定了，如果想以 harmony 方式运行，可以按下 `Ctrl+Shift+B`，选择 `xjs - Harmony` 方式运行~
+OK，就这么愉快的搞定了，如果想以 harmony 方式运行，可以按下 `Ctrl+Shift+B`，选择 `xjs - Harmony` 就行了。
