@@ -157,7 +157,6 @@ var Snippet = {
     }
   },
   updateProgress: function(percentage){
-    console.log(percentage);
     progress.getElementsByTagName("div")[0].style.width = percentage + "%";
     if(percentage >= 80) {
       progress.getElementsByTagName("div")[0].style.width = "100%";
