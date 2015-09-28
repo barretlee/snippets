@@ -157,12 +157,6 @@ table td {
     vertical-align: middle;
     transition: none;
 }
-.share {
-    position: absolute;
-    right: 0;
-    top: -40px;
-    display: none;
-}
 .add-snippet {
     position: absolute;
     left: -120px;
@@ -373,7 +367,7 @@ table td {
 .codebox p {
     margin: 8px 0;
 }
-.codebox .icon.close, .codebox .icon.pen {
+.codebox .icon.close, .codebox .icon.pen, .codebox .icon.share {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -390,6 +384,11 @@ table td {
 .codebox .icon.pen {
     right: 40px;
     background: none;
+}
+.codebox .icon.share {
+  right: 70px;
+  color: #E58C7C;
+  background: none;
 }
 .codebox .icon.pen:hover {
     color: #E58C7C;

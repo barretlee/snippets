@@ -156,7 +156,7 @@ var Snippet = {
       dom += "<li class='search-ret'>搜索结果</li>";
     }
     if(data && !data.length) {
-      dom += "<li class='search-null'>没有找到相关的 snippet，请重新输入搜索词~</li>";
+      dom += "<li class='search-null'>没有找到相关的 snippet，你可以帮助添加哦~</li>";
     }
     for(var i = 0; i < data.length; i++) {
       dom += '<li' + (i % 2 ? ' class="odd"' : '') + '><a href="javascript:void(0);" data-url="' +
