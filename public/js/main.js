@@ -16,6 +16,7 @@ var Snippet = {
     this.storeData();
     this.bind();
     this.duoshuo();
+    this.tongji();
   },
   storeData: function(){
     var store = {};
@@ -57,7 +58,7 @@ var Snippet = {
           }
         }
         p.setAttribute("class", "on");
-        self.renderList(evt.target.innerText);
+        self.renderList(evt.target.textContent);
         window.location.hash = "#!/snippets/" + evt.target.getAttribute("data-type");
         close.click();
       }
@@ -74,7 +75,7 @@ var Snippet = {
         evt.target.setAttribute("class", "on");
         codePreview.setAttribute("class", "codePreview on");
         var url = evt.target.getAttribute("data-url");
-        var title = evt.target.innerText;
+        var title = evt.target.textContent;
         self.showCode(url, title);
         window.location.hash = "#!" + url;
         var baseUrl = codebox.getAttribute("data-baseurl");
@@ -93,7 +94,7 @@ var Snippet = {
       document.querySelector("body").removeAttribute("class");
       q.value = "";
       qinfo.style.opacity = 0;
-      var type = document.querySelector(".codeTypes li.on span").innerText.toLowerCase();
+      var type = document.querySelector(".codeTypes li.on span").textContent.toLowerCase();
       self.renderList(type);
     });
     q.onkeypress = q.onkeyup = q.onkeydown = q.onfocus = function(evt) {
@@ -112,9 +113,9 @@ var Snippet = {
       }
       qinfo.style.opacity = 1;
       if(ret.length) {
-        qinfo.innerText = "找到了" + ret.length + "个结果，按 Enter 键展示。";
+        qinfo.textContent = "找到了" + ret.length + "个结果，按 Enter 键展示。";
       } else {
-        qinfo.innerText = "没有找到相关内容~";
+        qinfo.textContent = "没有找到相关内容~";
       }
       if(evt.keyCode == 13) {
         close.click();
@@ -212,7 +213,13 @@ var Snippet = {
     }
   },
   tongji: function(){
-
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?58aefbf3de3372645a3e8796d7601fee";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
   },
   duoshuo: function(){
     window.duoshuoQuery = {short_name:"barretlee"};
