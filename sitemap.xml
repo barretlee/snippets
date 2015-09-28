@@ -5,7 +5,7 @@ layout: nil
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <url>
                 <loc>{{ site.base }}/</loc>
-                <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+                <lastmod>{{ site.time | date: "%FT%T.000Z" }}</lastmod>
         </url>
         {% for page in site.pages %}
         <url>
