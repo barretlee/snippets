@@ -243,7 +243,7 @@ table td {
 .search input {
     border: 1px solid #CCC;
     border-radius: 2px;
-    height: 20px;
+    height: 24px;
     line-height: 20px;
     padding: 2px;
     text-indent: 6px;
@@ -344,7 +344,6 @@ table td {
     float: left;
     opacity: 0;
     border: 1px dashed #e5e5be;
-    border-left: none;
     min-height: 506px;
     width: 100px;
     position: relative;
@@ -379,7 +378,7 @@ table td {
 .codePreview.on .codebox {
     opacity: 1;
     width: 630px;
-    margin-left: 0;
+    margin-left: -1px;
     padding: 20px;
 }
 .codePreview::after {
