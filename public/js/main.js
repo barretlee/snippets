@@ -111,6 +111,7 @@ var Snippet = {
     };
   },
   renderList: function(type) {
+    if(!type) return;
     var data = this.store[type.toLowerCase()];
     var dom = "<ul>";
     for(var i = 0; i < data.length; i++) {
