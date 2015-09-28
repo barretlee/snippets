@@ -140,21 +140,11 @@ var Snippet = {
     with(new XMLHttpRequest) {
       open("GET", url + "?_t=" + new Date()*1);
       onreadystatechange = function(){
-        console.log(readyState);
-        if(readyState == 0) {
-          self.updateProgress(0.1);
-        }
-        if(readyState == 1) {
-          self.updateProgress(0.2);
-        }
-        if(readyState == 2) {
-          self.updateProgress(0.4);
-        }
         if(readyState == 3) {
-          self.updateProgress(0.7);
+          self.updateProgress(0.3);
         }
         if(readyState == 4) {
-          self.updateProgress(1);
+          self.updateProgress(0.7);
           self.cache[url] = "<h2>" + title + "</h2>" + marked(responseText);
           codectt.innerHTML = self.cache[url];
           var codes = codectt.querySelectorAll('pre code');
