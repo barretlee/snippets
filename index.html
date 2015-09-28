@@ -2,8 +2,6 @@
 layout: default
 title: Snippets
 ---
-
-
 <div class="codeTypes" id="codeTypes"></div>
 <div class="codePreview" id="codePreview">
 	<div class="typeList" id="typeList"></div>
@@ -15,10 +13,10 @@ title: Snippets
     </div>
 	</div>
 </div>
-
 <script>
 var snippets = [
-{% for item in site.pages %}{% assign dir = item.dir | slice: 0, 10 %}
+{% for item in site.pages %}
+  {% assign dir = item.dir | slice: 0, 10 %}
 	{% if dir == '/snippets/' %}
 		{% assign type = item.dir | remove: '/snippets/' %}
  		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
