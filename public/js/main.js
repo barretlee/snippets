@@ -161,7 +161,9 @@ var Snippet = {
     if(percentage == 1) {
       progress.style.opacity = "0";
       this.timer && clearTimeout(this.timer);
-      progress.getElementsByTagName("div")[0].style.width = 0;
+      setTimeout(function(){
+        progress.getElementsByTagName("div")[0].style.width = 0;
+      }, 100);
     } else {
       progress.style.opacity = "1";
     }

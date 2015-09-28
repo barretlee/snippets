@@ -81,12 +81,11 @@ table td {
   height: 5px;
   opacity: 0;
   z-index: 50;
-  transition: none;
 }
 .progress div {
   height: 100%;
   background: #e58c7c;
-  transition: none;
+  transition: width 0.1s;
   /*background: -moz-linear-gradient(left,#e5e5be 0,#003973 100%);
   background: -webkit-gradient(linear,left,right,color-sleft(0%,#e5e5be),color-sleft(100%,#003973));
   background: -webkit-linear-gradient(left,#e5e5be 0,#003973 100%);
