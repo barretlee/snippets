@@ -2,7 +2,8 @@
 layout: default
 title: Snippets
 ---
-<div class="search-mask"><i class="icon search-close">&#xe624;</i></div>
+<a href="{{site.new_path}}" class="add-snippet" target="_blank">+<b>添加 Snippet</b></a>
+<div class="search-mask"><i class="icon search-close" title="关闭搜索">&#xe624;</i></div>
 <div class="codeTypes" id="codeTypes"></div>
 <div class="codePreview" id="codePreview">
   <div class="search">
@@ -11,7 +12,8 @@ title: Snippets
   </div>
 	<div class="typeList" id="typeList"></div>
 	<div class="codebox" id="codebox" data-baseurl="{{site.edit_path}}">
-		<i class="icon close" id="close">&#xe624;</i>
+		<i class="icon close" id="close" title="关闭预览">&#xe624;</i>
+    <a class="icon pen" title="编辑代码" href="#" target="_blank">&#xe601;</a>
 		<div class="code" id="code">
       <i class="icon close" id="close">&#xe624;</i>
       <div class="codectt" id="codectt"></div>

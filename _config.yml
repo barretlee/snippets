@@ -6,8 +6,9 @@ timezone: Asia/Shanghai
 home: http://www.barretlee.com/
 demo: http://demo.barretlee.com/
 base: http://snippet.barretlee.com
-weibo: http://weibo.com/hustskyking
-edit_path: https://github.com/barretlee/snippet/edit/gh-pages/_posts
+weibo: http://weibo.com/173248656
+edit_path: https://github.com/barretlee/snippets/edit/gh-pages
+new_path: https://github.com/barretlee/snippets/new/gh-pages/snippets
 author: 小胡子哥
 author_en: Barret Lee
 email: barret.china@gmail.com

@@ -163,7 +163,24 @@ table td {
     top: -40px;
     display: none;
 }
-
+.add-snippet {
+    position: absolute;
+    left: -120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #EAEAEA;
+    cursor: pointer;
+}
+.add-snippet b {
+    display: block;
+    font-size: 12px;
+    margin-left: -25px;
+    opacity: 0;
+    color: #E58C7C;
+}
+.add-snippet:hover b {
+    opacity: 1;
+}
 .container {
     width: 700px;
     position: relative;
@@ -356,7 +373,7 @@ table td {
 .codebox p {
     margin: 8px 0;
 }
-.codebox .icon.close {
+.codebox .icon.close, .codebox .icon.pen {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -369,6 +386,13 @@ table td {
     cursor: pointer;
     border-radius: 100%;
     color: #999;
+}
+.codebox .icon.pen {
+    right: 40px;
+    background: none;
+}
+.codebox .icon.pen:hover {
+    color: #E58C7C;
 }
 .codebox .icon.close:hover {
     transform: rotateZ(360deg);

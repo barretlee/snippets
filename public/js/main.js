@@ -77,6 +77,8 @@ var Snippet = {
         var title = evt.target.innerText;
         self.showCode(url, title);
         window.location.hash = "#!" + url;
+        var baseUrl = codebox.getAttribute("data-baseurl");
+        document.querySelector(".codebox .pen").setAttribute("href", baseUrl + url);
       }
     });
     codebox.addEventListener("click", function(evt){

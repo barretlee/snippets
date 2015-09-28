@@ -4,11 +4,11 @@
 
 如果你希望帮助丰富代码片段库，可以操作如下流程：
 
-- fork [barretlee/snippet](https://github.com/barretlee/snippet.git) 仓库
+- fork [barretlee/snippets](https://github.com/barretlee/snippets.git) 仓库
 - 然后执行如下命令
 ```
-git clone https://github.com/{YOUR_GITHUB_NAME}/snippet.git
-cd snippet
+git clone https://github.com/{YOUR_GITHUB_NAME}/snippets.git
+cd snippets
 git chechout -b gh-pages
 cd snippets
 # 选择你想提交的文件类型，比如 html
@@ -30,4 +30,4 @@ git add --all
 git commit -m "add file html/{YOUR_CONTRIBUTE_FILE_NAME}.snippet"
 git push origin gh-pages
 ```
-- 然后在你的 [PR](https://github.com/{YOUR_GITHUB_NAME}/snippet/pulls) 页面提交一个 PR 到 `barretlee/snippet` 的仓库
+- 然后在你的 [PR](https://github.com/{YOUR_GITHUB_NAME}/snippets/pulls) 页面提交一个 PR 到 `barretlee/snippets` 的仓库
