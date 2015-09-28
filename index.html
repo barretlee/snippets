@@ -17,6 +17,7 @@ title: Snippets
 var snippets = [
 {% for item in site.pages %}
   {% assign dir = item.dir | slice: 0, 10 %}
+  {{dir}}
 	{% if dir == '/snippets/' %}
 		{% assign type = item.dir | remove: '/snippets/' %}
  		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
