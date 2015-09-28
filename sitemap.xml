@@ -10,7 +10,7 @@ layout: nil
         {% for page in site.pages %}
         <url>
                 <loc>{{ site.base }}{{ page.url }}</loc>
-                <lastmod>{{ page.date | date: "%Y-%m-%dT%h:%m:%s.000Z" }}</lastmod>
+                <lastmod>{{ page.date | date: "%Y-%m-%dT%T.000Z" }}</lastmod>
         </url>
         {% endfor %}
 </urlset>
