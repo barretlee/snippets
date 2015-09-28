@@ -1,19 +1,19 @@
-Micro-Share
-===========
+## Snippets
 
-微分享——小思路，小想法的汇聚地
+在这里，我将收集平时使用频率较高的代码片段。目前还在开发阶段，需要做的事情有这些：
 
-网页地址： <http://hi.barretlee.com>
+- [x] 代码呈现网页的制作
+- [x] 代码的实时编辑页面 - 链接到 github
+- [x] 与本地环境打通，比如 webStorm/ST 等，可以直接上传代码到对应目录
 
-最简单的博客就是，你只需要写，其他的啥都不用管。github 就能够做到。
+本应用对应的网址为 <http://snippet.barretlee.com>
 
-gihub pages 生成的页面和存放在 github 上的文件存在对应关系，我为每篇文章都加了对应的 edit 链接，这个链接被我隐藏掉了，但是只要在 url 后面加上?edit（或者按下 Ctrl+Shift+Enter），就可以在文中的页面里找到这个小小的 edit 链接。同时也在首页加了一个 new post 的链接，方便加入新的文章。
+### 关于
 
-##Contact me
+![小胡子哥](http://www.barretlee.com/avatar150.png)
 
-[![barretlee](https://0.gravatar.com/avatar/e43425aad4de30d628ad5c89e7c57a8a?s=200)](http://weibo.com/hustskyking "weibo-@Barret李靖")
+**微博：** [@Barret李靖](http://weibo.com/173248656)
 
-__Weibo:__ [@barret lee](http://weibo.com/hustskyking)
+### LISCENSE
 
-__twitter:__ [@barret_china](https://twitter.com/barret_china)
-
+MIT LISCENSE. 自由分享使用，注意保留署名。

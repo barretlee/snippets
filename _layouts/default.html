@@ -2,66 +2,39 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>{{ page.title }} | Barret Lee的微分享</title>
+	<title>{{ page.title }} | 小胡子哥的 snippet 分享</title>
 	<meta name="description" content="{{ page.description }} @Barret李靖" />
 	<meta name="keywords" content="{% for tag in page.tags %}{{ tag }},{% endfor %}" />
-	<meta name="email" content="barret.china@gmail.com" />
-	<meta name="author" content="http://weibo.com/hustskyking" />
+	<meta name="email" content="{{site.email}}" />
+	<meta name="author" content="{{site.weibo}}" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-	<script>
-		window.name = window.location.href;
-		if(window.location.pathname !== "/") {
-	   	    var redirect = "http://www.barretlee.com/blog" + window.location.pathname;
-		    window.location.replace(redirect);
-		} else {
-	            window.location.replace("http://www.barretlee.com/entry/");		
-		}
-	</script>
-	<link rel="stylesheet" href="/css/main.css?v=2014-4-26" />
+	<link rel="stylesheet" href="public/css/main.css" />
 </head>
 
 <body>
-	<div class="home-menu" itemscope="" itemtype="http://schema.org/Person">
-	    <div class="home-icon-con">
-	        <a class="home-menu-icon" href="http://barretlee.com" itemprop="name">Barret Lee</a>
-	        <a class="home-follow" href="http://hi.barretlee.com" title="Contact Me">Home</a>
-		    <div class="home-contact">
-		        <a href="http://www.facebook.com/barret.china" target="_blank" itemprop="follows" style="margin-left:-5px;"><img src="/imgs/facebook-32.png" alt="facebook" width="32"></a>
-		        <a href="mailto:barret.china@gmail.com" itemprop="email" target="_blank" style="text-align:right"><img src="/imgs/gmail-32.png" alt="send mail to barret" width="32"></a>
-		        <a href="http://weibo.com/hustskyking/" itemprop="follows" target="_blank" style="text-align:right;margin-left:10px"><img src="/imgs/weibo-32.ico" alt="sina weibo" width="32"></a>
-		    </div>
-	    </div>
-	</div>
+<div class="header">
+	<a href="{{site.base}}"><h1>Snippets</h1></a>
+  <span><a href="{{site.home}}" target="_blank">小胡子哥</a>收集的代码片段</span>
+  <ul>
+  	<li><a href="/contribute.html"><i class="icon">&#x2603;</i>贡献代码</a></li>
+  </ul>
+</div>
+<div class="container">
+<a href="javascript:var d=document;var b=d.body;if(b&&!document.xmlVersion){if(!d.getElementById('bsBox')){void(y=document.createElement('script'));void(y.src='http://static.bshare.cn/b/bookmark.js#lang=zh');void(b.appendChild(y));}else{bShare.show();}}" onclick="return fasle;" class="share">share</a>
+	{{ content }}
 
-	<!--<a href="https://github.com/barretlee/Micro-Share" class="forkme" style="position: absolute; top:-1px; right: 0; border: 0; z-index:99;_display:none;cursor:pointer;"  target="_blank"><img src="/imgs/forkme.png" style="margin:0" alt="Fork me on GitHub"></a>-->
-	
-	<div class="container">
-	<a href="javascript:var d=document;var b=d.body;if(b&&!document.xmlVersion){if(!d.getElementById('bsBox')){void(y=document.createElement('script'));void(y.src='http://static.bshare.cn/b/bookmark.js#lang=zh');void(b.appendChild(y));}else{bShare.show();}}" onclick="return fasle;" style="position: absolute;right: 5%;top: 2%;margin-top: 15px;margin-right: 80px;font-weight: bold;">share</a>
-		{{ content }}
-	
-		<div class="footer">
-		    <small>&copy;Copyright 2014 By <a href="http://barretlee.com/about.html" target="_blank">Barret Lee</a> Drived By <a target="_blank" href="https://github.com/barretlee">github pages</a></small>
-		</div>
-		<iframe id="weiboBox" width="350" height="550" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=350&amp;height=550&amp;ptype=1&amp;speed=0&amp;skin=1&amp;isTitle=1&amp;noborder=1&amp;isWeibo=1&amp;isFans=1&amp;uid=1812166904&amp;verifier=73dc4ca5&amp;dpc=1"></iframe>
+<div class="ds-thread" data-thread-key="snippets" data-title="{{page.title}}" data-url="{{site.base}}{{page.url}}" >
+	<div class="ds-loading">
+		<img src="{{site.home}}/blogimgs/loading.gif" alt="loading..."/>
+		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
 	</div>
-	<div style="display:none;">
-		<script type="text/javascript">
-	        if(window.console&&window.console.log) {
-	            console.log("\n\n\n\n\n\n\n\n\n\n%c", "background:url(https://2.gravatar.com/avatar/e43425aad4de30d628ad5c89e7c57a8a?r=x&s=150); background-repeat:no-repeat; font-size:0; line-height:30px; padding-top:150px;padding-left:150px;");
-	            console.log("欢迎踩点我的博客：http://barretlee.com，我觉得编程是一件非常愉快的事情。\n对一个疯狂的程序员来说，代码就是他的一切，我还没有那么疯狂，但是也希望coding\n的时候可以融入自己的生活哲学，让更多娱乐化的元素出现在代码中~%c\n\nWeibo: http://weibo.com/hustskyking (@BarretLee)", "color:red");
-	        }
-
-		    ~function(){
-		        var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-		        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F14788c3dc5c09194b1bad2d5ded36949' type='text/javascript'%3E%3C/script%3E"));
-		    }();
-
-		    document.onkeydown = function(evt){
-		    		var href = window.location.href;
-		    		if(evt.keyCode == 13 && evt.shiftKey && evt.ctrlKey && window.location.href.indexOf("?edit") == -1)
-		    			window.location.href = window.location.href + "?edit";
-		    }
-		</script>
-	</div>
+</div>
+</div>
+<div class="footer">
+	<p>&copy;Copyright {{ 'now' | date: "%Y" }} Powered By <a href="{{site.home}}/about/" target="_blank">{{site.author}}</a> Build with <a target="_blank" href="http://jekyllrb.com/">jekyll</a></p>
+</div>
+<script src="public/js/hl.js"></script>
+<script src="public/js/markd.js"></script>
+<script src="public/js/main.js"></script>
 </body>
 </html>

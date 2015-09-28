@@ -1,41 +1,28 @@
 ---
 layout: default
-title: 微分享
+title: Snippets
 ---
-<h2>
-  {{page.title}}
-  <a href="{{site.edit_path}}" id="newPost" target="_blank" style="display:none; font-size:12px; color:red; margin-left:15px;">new post</a>
-  <span style="color:#666;font-size:13px;margin-left:10px;">想法，随笔，思考，感叹，瞬间，笔记...</span>
-</h2>
-<ul id="shareList">
-	{% for post in site.posts %}
-	<li><time datatime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time> » <a href="{{ post.url }}">{{ post.title }}</a><span class="edit"><a href="{{site.edit_path}}{{post.url}}">edit</a></span></li>
-	{% endfor %}
-</ul>
-
-<div class="ds-thread" itemprop="comment"></div>
 
 
-<script type="text/javascript">
-window.duoshuoQuery = {short_name:"barretlee"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = 'http://static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	|| document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-if(window.location.href.indexOf("?edit")>-1){
-	var span = document.getElementById("shareList").getElementsByTagName("span");
-	for(var i = 0; i < span.length; i++){
-		span[i].style.display = "inline";
-		var t = span[i].children[0].href;
-		span[i].children[0].href = t.replace(/(\d+)\//g, "$1-").replace(/\/$/, ".md");
-	}
-	var newPost = document.getElementById("newPost");
-	newPost.href = newPost.href.replace("edit", "new");
-	newPost.style.display = "inline";
-}
-	
+<div class="codeTypes" id="codeTypes"></div>
+<div class="codePreview" id="codePreview">
+	<div class="typeList" id="typeList"></div>
+	<div class="codebox" id="codebox">
+		<i class="icon close" id="close">&#xe624;</i>
+		<div class="code" id="code">
+      <i class="icon close" id="close">&#xe624;</i>
+      <div class="codectt" id="codectt"></div>
+    </div>
+	</div>
+</div>
+
+<script>
+var snippets = [
+{% for item in site.pages %}{% assign dir = item.dir | slice: 0, 10 %}
+	{% if dir == '/snippets/' %}
+		{% assign type = item.dir | remove: '/snippets/' %}
+ 		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
+	{% endif %}
+{% endfor %}
+{}].slice(0, -1);
 </script>
