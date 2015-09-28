@@ -13,11 +13,9 @@ title: Snippets
     </div>
 	</div>
 </div>
-{{site.base}}
 <script>
 var snippets = [
 {% for item in site.pages %}
-  {{item}}
   {% assign dir = item.dir | slice: 0, 10 %}
 	{% if dir == '/snippets/' %}
 		{% assign type = item.dir | remove: '/snippets/' %}
