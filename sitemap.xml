@@ -7,10 +7,10 @@ layout: nil
                 <loc>{{ site.base }}/</loc>
                 <lastmod>{{ site.time | date: "%FT%T.000Z" }}</lastmod>
         </url>
-        {% for page in site.pages %}
+        {% for post in site.posts %}
         <url>
-                <loc>{{ site.base }}{{ page.url }}</loc>
-                <lastmod>{{ page.date | date: "%FT%T.000Z" }}</lastmod>
+                <loc>{{ site.base }}{{ post.url }}</loc>
+                <lastmod>{{ post.date | date: "%FT%T.000Z" }}</lastmod>
         </url>
         {% endfor %}
 </urlset>
