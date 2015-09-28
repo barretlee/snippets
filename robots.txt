@@ -1,0 +1,3 @@
+Sitemap: http://snippets.barretlee.com/sitemap.xml
+User-agent: *
+Allow: /

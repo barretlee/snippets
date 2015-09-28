@@ -30,6 +30,9 @@ body {
     font-size: 14px;
     line-height: 1.2;
 }
+a[target='_blank'] {
+  cursor: alias;
+}
 a {
     color: #4a75b5;
     text-decoration: none;
@@ -86,15 +89,6 @@ table td {
   height: 100%;
   background: #e58c7c;
   transition: width 0.1s;
-  /*background: -moz-linear-gradient(left,#e5e5be 0,#003973 100%);
-  background: -webkit-gradient(linear,left,right,color-sleft(0%,#e5e5be),color-sleft(100%,#003973));
-  background: -webkit-linear-gradient(left,#e5e5be 0,#003973 100%);
-  background: -o-linear-gradient(left,#e5e5be 0,#003973 100%);
-  background: -ms-linear-gradient(left,#e5e5be 0,#003973 100%);
-  background: linear-gradient(to left,#e5e5be 0,#003973 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5be', endColorstr='#003973', GradientType=1);*/
-  /*border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;*/
 }
 .header {
     overflow: hidden;
@@ -142,14 +136,26 @@ table td {
     line-height: 64px;
 }
 .header ul li {
-
+  float: left;
+  margin-left: 20px;
+}
+.header ul li a {
+    color: #555;
+    display: inline-block;
+    height: 100%;
+    line-height: 64px;
 }
 .header ul li a {
     color: #555;
 }
+.header ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
 .header ul li .icon {
     margin-right: 4px;
     vertical-align: middle;
+    transition: none;
 }
 .share {
     position: absolute;
