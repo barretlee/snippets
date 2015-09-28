@@ -23,7 +23,6 @@ title: Snippets
 <script>
 var snippets = [
 {% for item in site.pages %}
-{{item}}
 	{% assign type = item.dir | remove: '/snippets/' %}
   {% if type != '/' %}
 		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
