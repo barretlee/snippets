@@ -1,4 +1,5 @@
 var close = document.querySelector("#close");
+var sclose = document.querySelector(".search-close");
 var codePreview = document.querySelector("#codePreview");
 var codeTypes = document.querySelector("#codeTypes");
 var codebox = document.querySelector("#codebox");
@@ -6,6 +7,8 @@ var codectt = document.querySelector("#codectt");
 var typeList = document.querySelector("#typeList");
 var code = document.querySelector("#code");
 var progress = document.querySelector("#progress");
+var q = document.querySelector("#q");
+var qinfo = document.querySelector(".search-info");
 
 var Snippet = {
   cache: {},
@@ -84,6 +87,38 @@ var Snippet = {
     close.addEventListener("click", function(){
       codePreview.setAttribute("class", "codePreview");
     });
+    sclose.addEventListener("click", function(){
+      document.querySelector("body").removeAttribute("class");
+      q.value = "";
+      qinfo.style.opacity = 0;
+      var type = document.querySelector(".codeTypes li.on span").innerText.toLowerCase();
+      self.renderList(type);
+    });
+    q.onkeypress = q.onkeyup = q.onkeydown = q.onfocus = function(evt) {
+      var val = q.value;
+      if( !val ) {
+        qinfo.style.opacity = 0;
+        return;
+      }
+      document.querySelector("body").setAttribute("class", "search_on");
+      close.click();
+      var ret = [];
+      for(var i = 0; i < snippets.length; i++) {
+        if(snippets[i].title.indexOf(val) > -1) {
+          ret.push(snippets[i]);
+        }
+      }
+      qinfo.style.opacity = 1;
+      if(ret.length) {
+        qinfo.innerText = "找到了" + ret.length + "个结果，按 Enter 键展示。";
+      } else {
+        qinfo.innerText = "没有找到相关内容~";
+      }
+      if(evt.keyCode == 13) {
+        close.click();
+        self.renderList("SEARCH", ret);
+      }
+    };
     document.onkeydown = function(evt){
       if(evt.keyCode == 27) {
         close.click();
@@ -111,13 +146,18 @@ var Snippet = {
       }
     };
   },
-  renderList: function(type) {
-    if(!type) return;
-    var data = this.store[type.toLowerCase()];
+  renderList: function(type, input) {
+    var data = input || Snippet.store[type.toLowerCase()] || {};
     var dom = "<ul>";
+    if(type == "SEARCH") {
+      dom += "<li class='search-ret'>搜索结果</li>";
+    }
+    if(data && !data.length) {
+      dom += "<li class='search-null'>没有找到相关的 snippet，请重新输入搜索词~</li>";
+    }
     for(var i = 0; i < data.length; i++) {
       dom += '<li' + (i % 2 ? ' class="odd"' : '') + '><a href="javascript:void(0);" data-url="' +
-        data[i].url + '">' + data[i].title +'</a></li>';
+        data[i].url + '">'+ data[i].title + (input ? ' <span>( ' + data[i].type + ' )</span>' : '')  + '</a></li>';
     }
     dom += '</ul>';
     typeList.innerHTML = dom;
