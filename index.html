@@ -16,9 +16,10 @@ title: Snippets
 <script>
 var snippets = [
 {% for item in site.pages %}
-  {% assign dir = item.dir | slice: 0, 10 %}
-		{% assign type = item.dir | remove: '/snippets/' %}
- 		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
+	{% assign type = item.dir | remove: '/snippets/' %}
+  {% if type != '/' %}
+		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
+  {% endif %}
 {% endfor %}
 {}].slice(0, -1);
 </script>
