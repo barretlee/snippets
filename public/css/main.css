@@ -73,6 +73,28 @@ table td {
   border-color: #666666;
   background-color: #ffffff;
 }
+.progress {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 6px;
+  opacity: 0;
+  z-index: 50;
+}
+.progress div {
+  height: 100%;
+  background: #499bea;
+  background: -moz-linear-gradient(left,#e5e5be 0,#003973 100%);
+  background: -webkit-gradient(linear,left,right,color-sleft(0%,#e5e5be),color-sleft(100%,#003973));
+  background: -webkit-linear-gradient(left,#e5e5be 0,#003973 100%);
+  background: -o-linear-gradient(left,#e5e5be 0,#003973 100%);
+  background: -ms-linear-gradient(left,#e5e5be 0,#003973 100%);
+  background: linear-gradient(to left,#e5e5be 0,#003973 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5be', endColorstr='#003973', GradientType=1);
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
 .header {
     overflow: hidden;
     -webkit-user-select: none;

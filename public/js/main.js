@@ -5,6 +5,7 @@ var codebox = document.querySelector("#codebox");
 var codectt = document.querySelector("#codectt");
 var typeList = document.querySelector("#typeList");
 var code = document.querySelector("#code");
+var progress = document.querySelector("#progress");
 
 var Snippet = {
   cache: {},
@@ -139,6 +140,7 @@ var Snippet = {
     with(new XMLHttpRequest) {
       open("GET", url + "?_t=" + new Date()*1);
       onreadystatechange = function(){
+        self.updateProgress((+readyState + 1) / 5);
         if(readyState == 4) {
           self.cache[url] = "<h2>" + title + "</h2>" + marked(responseText);
           codectt.innerHTML = self.cache[url];
@@ -151,6 +153,14 @@ var Snippet = {
       };
       send();
     }
+  },
+  updateProgress: function(percentage){
+    if(percentage == 1) {
+      progress.style.opacity = "0";
+    } else {
+      progress.style.opacity = "1";
+    }
+    progress.getElementsByTagName("div")[0].style.width = percentage * 100 + "%";
   },
   tongji: function(){
 
