@@ -137,20 +137,19 @@ var Snippet = {
       return;
     }
     // codebox.style.background = "url(http://www.barretlee.com/blogimgs/loading.gif) no-repeat center center";
+    self.updateProgress(0.3);
     with(new XMLHttpRequest) {
       open("GET", url + "?_t=" + new Date()*1);
       onreadystatechange = function(){
-        if(readyState == 3) {
-          self.updateProgress(0.3);
-        }
         if(readyState == 4) {
-          self.updateProgress(0.7);
+          self.updateProgress(0.6);
           self.cache[url] = "<h2>" + title + "</h2>" + marked(responseText);
           codectt.innerHTML = self.cache[url];
           var codes = codectt.querySelectorAll('pre code');
           for(var i = 0; i < codes.length; i++){
             hljs.highlightBlock(codes[i]);
           }
+          self.updateProgress(1);
           // codebox.style.background = "";
         }
       };
@@ -161,7 +160,8 @@ var Snippet = {
     progress.getElementsByTagName("div")[0].style.width = percentage * 100 + "%";
     if(percentage == 1) {
       progress.style.opacity = "0";
-      this.updateProgress(0);
+      this.timer && clearTimeout(this.timer);
+      progress.getElementsByTagName("div")[0].style.width = 0;
     } else {
       progress.style.opacity = "1";
     }
