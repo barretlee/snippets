@@ -107,8 +107,9 @@ var Snippet = {
       self.renderList(type);
     });
     addSnippet.addEventListener("click", function(evt){
-      if(evt.shiftKey) {
+      if(evt.metaKey) {
         window.open(evt.target.getAttribute("href"));
+        return;
       }
       if(evt.target.nodeName.toLowerCase() != "a") {
         fsubmit.removeAttribute("disabled");
