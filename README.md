@@ -4,6 +4,8 @@
 
 本应用对应的网址为: <http://snippets.barretlee.com>
 
+![snippet](http://www.barretlee.com/blogimgs/2015/09/20150902_2774c376.jpg)
+
 ### 贡献代码
 
 如果你希望帮助丰富代码片段库，可以操作如下流程：
