@@ -14,6 +14,7 @@ var forminfo = document.querySelector("#commitCode .info");
 var mask = document.querySelector(".search-mask");
 var addSnippet = document.querySelector(".add-snippet");
 var otherType = document.querySelector("#f_type_other");
+var fsubmit = document.querySelector("#f_submit");
 
 var Snippet = {
   cache: {},
@@ -106,6 +107,7 @@ var Snippet = {
       self.renderList(type);
     });
     addSnippet.addEventListener("click", function(evt){
+      fsubmit.removeAttribute("disabled");
       document.querySelector("body").setAttribute("class", "form_on");
       evt.preventDefault();
       form.style.opacity = 1;
@@ -123,6 +125,9 @@ var Snippet = {
         document.querySelector("#f_type").innerHTML = types.join("\n");
       }
     });
+    form.onsubmit = function(){
+      fsubmit.setAttribute("disabled", "disabled");
+    };
     document.querySelector("#f_type").addEventListener("change", function(){
       if(this.value == -1) {
         this.name = "";
@@ -301,6 +306,7 @@ window.onmessage = function(evt) {
         form.style.opacity = 0;
         mask.style.opacity = 0;
         mask.style.zIndex = -1;
+        fsubmit.removeAttribute("disabled");
       }, 800);
     }
   }
