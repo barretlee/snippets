@@ -107,22 +107,24 @@ var Snippet = {
       self.renderList(type);
     });
     addSnippet.addEventListener("click", function(evt){
-      fsubmit.removeAttribute("disabled");
-      document.querySelector("body").setAttribute("class", "form_on");
-      evt.preventDefault();
-      form.style.opacity = 1;
-      form.style.zIndex = 52;
-      mask.style.opacity = 1;
-      mask.style.zIndex = 51;
-      if(document.querySelectorAll("#f_type option").length == 1) {
-        var spans = document.querySelectorAll(".codeTypes span");
-        var types = [];
-        for(var i = 0; i < spans.length; i++ ) {
-          var text = spans[i].textContent.toLowerCase();
-          types.push("<option value='" + text + "'>" + text + "</option>")
+      if(evt.target.nodeName.toLowerCase() != "a") {
+        fsubmit.removeAttribute("disabled");
+        document.querySelector("body").setAttribute("class", "form_on");
+        evt.preventDefault();
+        form.style.opacity = 1;
+        form.style.zIndex = 52;
+        mask.style.opacity = 1;
+        mask.style.zIndex = 51;
+        if(document.querySelectorAll("#f_type option").length == 1) {
+          var spans = document.querySelectorAll(".codeTypes span");
+          var types = [];
+          for(var i = 0; i < spans.length; i++ ) {
+            var text = spans[i].textContent.toLowerCase();
+            types.push("<option value='" + text + "'>" + text + "</option>")
+          }
+          types.push("<option value='-1'>其他</option>");
+          document.querySelector("#f_type").innerHTML = types.join("\n");
         }
-        types.push("<option value='-1'>其他</option>");
-        document.querySelector("#f_type").innerHTML = types.join("\n");
       }
     });
     form.onsubmit = function(){
