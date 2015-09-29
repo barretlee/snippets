@@ -127,7 +127,9 @@ var Snippet = {
             types.push("<option value='" + text + "'>" + text + "</option>")
           }
           types.push("<option value='-1'>其他</option>");
-          document.querySelector("#f_type").innerHTML = types.join("\n");
+          var f_type = document.querySelector("#f_type")
+          f_type.innerHTML = types.join("\n");
+          f_type.value = f_type.querySelector("option").value;
         }
       }
     });
