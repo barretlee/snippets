@@ -103,6 +103,9 @@ var Snippet = {
         qinfo.style.opacity = 0;
         return;
       }
+      if(evt.keyCode == 27) {
+        return;
+      }
       document.querySelector("body").setAttribute("class", "search_on");
       close.click();
       var ret = [];
