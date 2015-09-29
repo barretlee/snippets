@@ -123,7 +123,11 @@ var Snippet = {
       }
     };
     document.onkeydown = function(evt){
+      var body = document.querySelector("body");
       if(evt.keyCode == 27) {
+        if(body.hasAttribute("class")) {
+          body.removeAttribute("class");
+        }
         close.click();
       }
     };
