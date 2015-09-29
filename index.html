@@ -2,8 +2,8 @@
 layout: default
 title: Snippets
 ---
-<a href="{{site.new_path}}" class="add-snippet" target="_blank">+<b>添加 Snippet</b></a>
-<div class="search-mask"><i class="icon search-close" title="关闭搜索">&#xe624;</i></div>
+<span href="{{site.new_path}}" class="add-snippet" target="_blank">+<b>添加 Snippet</b></span>
+<div class="search-mask"><i class="icon search-close" title="关闭">&#xe624;</i></div>
 <div class="codeTypes" id="codeTypes"></div>
 <div class="codePreview" id="codePreview">
   <div class="search">
@@ -20,6 +20,43 @@ title: Snippets
       <div class="codectt" id="codectt"></div>
     </div>
 	</div>
+</div>
+<div class="commitCode" id="commitCode">
+  <iframe style="display:none;" id="ifr" name="ifr"></iframe>
+  <form method="post" target="ifr" id="commitForm" class="commitForm"
+    action="http://snippet-be.coding.io/post" enctype="multipart/form-data">
+    <p>
+      <span>
+        <label for="f_title">标题: </label>
+        <input type="text" name="title" if="f_title" placeholder="Snippet的标题（必填）" required />
+      </span>
+      <span class="fselect">
+        <label for="f_type">类型: </label>
+        <select name="type" id="f_type" required>
+          <option value="">--选择类型--</option>
+        </select>
+        <input type="text" name="type" id="f_type_other" value="" placeholder="其他类型" />
+      </span>
+    </p>
+    <p>
+      <span>
+        <label for="f_author">作者: </label>
+        <input type="text" name="author" id="f_author" placeholder="您的大名（必填）" required />
+      </span>
+      <span>
+        <label for="f_email">邮箱: </label>
+        <input type="text" name="email" id="f_email" placeholder="您的邮箱（必填）" required />
+      </span>
+    </p>
+    <textarea name="content" id="f_content" required placeholder='使用 markdown 编写，代码要放到 "``` code ```" 中!'>
+使用 markdown 编写，代码要这样放：
+
+```
+code
+```
+    </textarea>
+    <input type="submit" value="提交" id="f_submit" /><b class="info">info</b>
+  </form>
 </div>
 <script>
 var snippets = [
