@@ -735,6 +735,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     right: 30px;
   }
 }
+
+
+@media screen and (max-width: 741px) {
+  * {
+      transition: all 0.3s;
+  }
+}
 @media screen and (max-width: 540px) {
   .header span {
     display: none;
