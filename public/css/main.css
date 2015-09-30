@@ -422,6 +422,22 @@ table td {
   max-height: none;
   overflow: auto;
 }
+
+.codectt {
+  line-height: 24px;
+}
+.codectt p {
+  margin: 8px 0;
+}
+.codectt ul {
+  list-style-type: square;
+  margin-left: 25px;
+}
+.codectt ul li {
+  list-style-type: square;
+  margin-bottom: 10px;
+}
+
 .footer {
     width: 800px;
     margin: 0 auto;
