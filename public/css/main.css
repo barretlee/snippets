@@ -680,6 +680,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     width: auto;
     display: block;
     transition: none;
+    padding-top: 35px;
   }
   .codeTypes {
     position: static;
