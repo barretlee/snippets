@@ -670,11 +670,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   .codebox {
     min-height: auto;
     transition: none;
+    display: none;
+    float: none;
+    opacity: 1;
   }
   .codePreview.on .codebox {
     margin-right: 0;
-    float: none;
     width: auto;
+    display: block;
     transition: none;
   }
   .codeTypes {
