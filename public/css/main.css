@@ -733,3 +733,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     right: 30px;
   }
 }
+@media screen and (max-width: 640px) {
+  .header span {
+    display: none;
+  }
+  .header ul li {
+    display: none;
+  }
+  .header ul li.forkbtn {
+    display: inline-block;
+  }
+}
