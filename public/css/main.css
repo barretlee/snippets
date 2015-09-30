@@ -659,3 +659,73 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-chunk {
   color: #aaa;
 }
+
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .codebox {
+    min-height: auto;
+    transition: none;
+  }
+  .codePreview.on .codebox {
+    margin-right: 0;
+    float: none;
+    width: auto;
+    transition: none;
+  }
+  .codeTypes {
+    position: static;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .codeTypes li {
+    display: inline-block;
+  }
+  .codePreview.on {
+    margin-right: 0;
+  }
+  .typeList {
+    max-height: 220px;
+    min-height: auto;
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    transition: none;
+    overflow: hidden;
+    border: 4px solid #e5e5be;
+  }
+  .codePreview {
+    position: static;
+  }
+  .typeList ul {
+    display: block;
+    transition: none;
+  }
+  .codePreview.on .typeList {
+    max-height: 220px;
+    margin-bottom: 30px;
+    width: auto;
+    transition: none;
+  }
+  .codeTypes li.on span {
+    margin-left: 0;
+    padding-left: 15px;
+    border-radius: 0;
+    background: -moz-linear-gradient(top,#e5e5be 0,#003973 100%);
+    background: -webkit-gradient(linear,top,bottom,color-stop(0%,#e5e5be),color-stop(100%,#003973));
+    background: -webkit-linear-gradient(top,#e5e5be 0,#003973 100%);
+    background: -o-linear-gradient(top,#e5e5be 0,#003973 100%);
+    background: -ms-linear-gradient(top,#e5e5be 0,#003973 100%);
+    background: linear-gradient(to top,#e5e5be 0,#003973 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5be', endColorstr='#003973', GradientType=1);
+  }
+  .search {
+    top: -60px;
+    right: 30px;
+  }
+}
