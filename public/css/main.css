@@ -694,7 +694,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   }
   .typeList {
     max-height: 220px;
-    min-height: auto;
+    min-height: 0 !important;
     float: none;
     width: auto;
     margin-left: 0;
