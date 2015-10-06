@@ -27,6 +27,7 @@ html, body {
     overflow-x: hidden;
 }
 body, form, input, select, option {
+    background: #FFF;
     font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 14px;
     line-height: 1.2;
