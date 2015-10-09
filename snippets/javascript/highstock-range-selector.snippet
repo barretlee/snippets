@@ -8,10 +8,11 @@ Email: john(at)hcharts.cn
 
 Some thing about Highstock
 
-1、rangeSelector
+### 1、rangeSelector
 
-1) rangeSelector.buttons
+##### 1) rangeSelector.buttons
 
+```
 rangeSelector: {
     buttons: [{
         type: 'day',
@@ -30,12 +31,15 @@ rangeSelector: {
         text: '所有'
     }]
 }
-type 取值可以是：millisecond、second、minute、day、week、month、ytd（今年迄今）、year、all
-count：
-text：显示的文字
-2) rangeSelector 生效，但是不显示相应的按钮
+```
 
-// 
+type 取值可以是：millisecond、second、minute、day、week、month、ytd（今年迄今）、year、all
+text：显示的文字
+
+##### 2) rangeSelector 生效，但是不显示相应的按钮
+
+
+```
 Highcharts.setOptions({
   lang: {
       rangeSelectorZoom: ''    // hidden the text 'Zoom' show in chart
@@ -52,8 +56,11 @@ $('#container').highcharts('Stock', {
         inputEnabled: false     // 不显示日期输入框
     }
 });
+```
+
 3）获取当前 rangeSelector 选中的范围
 
+```
 xAxis: {
     events: {
         afterSetExtremes: function(e) {
@@ -71,12 +78,17 @@ xAxis: {
         }
     }
 }
+```
+
 4）设置 rangeSelector 按钮的宽高
 
+```
 rangeSelector: {
     buttonTheme: {
         width: 100,
         height: 20
     }
 }
-注：buttonTheme.width 和 buttonTheme.height 为 API 为公开的参数配置，可以通过源码知晓。
+```
+
+**注：buttonTheme.width 和 buttonTheme.height 为 API 为公开的参数配置，可以通过源码知晓。**
