@@ -1,0 +1,22 @@
+---
+title: 检测浏览器是否安装flash
+---
+
+Author: 吕大豹
+
+Email: 670818517(at)qq.com
+
+function hasFlash(){
+  if (navigator.plugins && navigator.plugins.length && navigator.plugins['Shockwave Flash']) {
+    return true;
+  } else if (navigator.mimeTypes && navigator.mimeTypes.length) {
+    var mimeType = navigator.mimeTypes['application/x-shockwave-flash'];
+    return mimeType && mimeType.enabledPlugin;
+  } else {
+    try {
+      var ax = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+      return true;
+    } catch (e) {}
+  }
+  return false;
+}
