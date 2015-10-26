@@ -15,7 +15,7 @@
 ```
 git clone https://github.com/{YOUR_GITHUB_NAME}/snippets.git
 cd snippets
-git chechout -b gh-pages
+git checkout -b gh-pages
 cd snippets
 # 选择你想提交的文件类型，比如 html
 cd html
