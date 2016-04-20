@@ -1,6 +1,5 @@
 module Jekyll
-  class UpcaseConverter < Converter
-    safe true
+  class SnippetConverter < Converter
     priority :low
 
     def matches(ext)
