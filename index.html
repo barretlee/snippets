@@ -65,9 +65,9 @@ P.S：如果点击提交木有反应，应该是后端程序挂了，您可以�
 <script>
 var snippets = [
 {% for item in site.pages %}
-	{% assign type = item.dir | remove: '/snippets/' %}
+	{% assign type = item.dir | split: "/" %}
   {% if type != '/' %}
-		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
+		{ type: "{{ type[2] }}", title: "{{ item.title }}", url: "{{ item.url }}" },
   {% endif %}
 {% endfor %}
 {}].slice(0, -1);
