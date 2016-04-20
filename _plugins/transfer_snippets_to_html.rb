@@ -17,6 +17,7 @@ module Jekyll
       '<meta name="keywords" content="分享技术,分享生活,snippets,barretlee,小胡子哥" />' +
       '<meta name="email" content="barret.china@gmail.com" />' +
       '<meta name="author" content="http://weibo.com/173248656" />' +
+      ' ' +
       content
     end
   end
