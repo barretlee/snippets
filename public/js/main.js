@@ -9,12 +9,12 @@ var code = document.querySelector("#code");
 var progress = document.querySelector("#progress");
 var q = document.querySelector("#q");
 var qinfo = document.querySelector(".search-info");
-var form = document.querySelector("#commitCode");
-var forminfo = document.querySelector("#commitCode .info");
-var mask = document.querySelector(".search-mask");
+// var form = document.querySelector("#commitCode");
+// var forminfo = document.querySelector("#commitCode .info");
+// var mask = document.querySelector(".search-mask");
 var addSnippet = document.querySelector(".add-snippet");
-var otherType = document.querySelector("#f_type_other");
-var fsubmit = document.querySelector("#f_submit");
+// var otherType = document.querySelector("#f_type_other");
+// var fsubmit = document.querySelector("#f_submit");
 
 var Snippet = {
   cache: {},
@@ -116,12 +116,12 @@ var Snippet = {
       }
       if(evt.target.nodeName.toLowerCase() != "a") {
         fsubmit.removeAttribute("disabled");
-        document.querySelector("body").setAttribute("class", "form_on");
+        // document.querySelector("body").setAttribute("class", "form_on");
         evt.preventDefault();
-        form.style.opacity = 1;
-        form.style.zIndex = 52;
-        mask.style.opacity = 1;
-        mask.style.zIndex = 51;
+        // form.style.opacity = 1;
+        // form.style.zIndex = 52;
+        // mask.style.opacity = 1;
+        // mask.style.zIndex = 51;
         if(document.querySelectorAll("#f_type option").length == 1) {
           var spans = document.querySelectorAll(".codeTypes span");
           var types = [];
@@ -136,24 +136,24 @@ var Snippet = {
         }
       }
     });
-    form.onsubmit = function(){
-      fsubmit.setAttribute("disabled", "disabled");
-    };
-    document.querySelector("#f_type").addEventListener("change", function(){
-      if(this.value == -1) {
-        this.name = "";
-        this.removeAttribute("required");
-        otherType.style.opacity = 1;
-        otherType.name = "type";
-        otherType.setAttribute("required", "required");
-      } else {
-        this.name = "type";
-        this.setAttribute("required", "required");
-        otherType.style.opacity = 0;
-        otherType.name = "";
-        otherType.removeAttribute("required");
-      }
-    });
+    // form.onsubmit = function(){
+    //   fsubmit.setAttribute("disabled", "disabled");
+    // };
+    // document.querySelector("#f_type").addEventListener("change", function(){
+    //   if(this.value == -1) {
+    //     this.name = "";
+    //     this.removeAttribute("required");
+    //     otherType.style.opacity = 1;
+    //     otherType.name = "type";
+    //     otherType.setAttribute("required", "required");
+    //   } else {
+    //     this.name = "type";
+    //     this.setAttribute("required", "required");
+    //     otherType.style.opacity = 0;
+    //     otherType.name = "";
+    //     otherType.removeAttribute("required");
+    //   }
+    // });
     q.onkeypress = q.onkeyup = q.onkeydown = q.onfocus = function(evt) {
       var val = q.value;
       if( !val ) {
@@ -189,15 +189,15 @@ var Snippet = {
           body.removeAttribute("class");
         }
         close.click();
-        if(form.style.opacity == 1) {
-          form.style.opacity = 0;
-          form.style.zIndex = -1;
-          mask.style.opacity = 0;
-          mask.style.zIndex = -1;
-        }
+        // if(form.style.opacity == 1) {
+        //   form.style.opacity = 0;
+        //   form.style.zIndex = -1;
+        //   mask.style.opacity = 0;
+        //   mask.style.zIndex = -1;
+        // }
       }
     };
-    window.onload = function() {
+    window.onhashchange = window.onload = function() {
       var hash = window.location.hash;
       if(hash){
         var url = hash.slice(2);
@@ -306,19 +306,19 @@ var Snippet = {
 
 Snippet.init();
 
-window.onmessage = function(evt) {
-  if(/^http:\/\/(snippet-be\.coding\.io|0\.0\.0\.0|localhost)/.test(evt.origin)) {
-    var data = evt.data;
-    if(data.code == 200) {
-      forminfo.innerHTML = data.msg;
-      forminfo.style.opacity = 1;
-      setTimeout(function(){
-        forminfo.style.opacity = 0;
-        form.style.opacity = 0;
-        mask.style.opacity = 0;
-        mask.style.zIndex = -1;
-        fsubmit.removeAttribute("disabled");
-      }, 800);
-    }
-  }
-};
+// window.onmessage = function(evt) {
+//   if(/^http:\/\/(snippet-be\.coding\.io|0\.0\.0\.0|localhost)/.test(evt.origin)) {
+//     var data = evt.data;
+//     if(data.code == 200) {
+//       forminfo.innerHTML = data.msg;
+//       forminfo.style.opacity = 1;
+//       setTimeout(function(){
+//         forminfo.style.opacity = 0;
+//         form.style.opacity = 0;
+//         mask.style.opacity = 0;
+//         mask.style.zIndex = -1;
+//         fsubmit.removeAttribute("disabled");
+//       }, 800);
+//     }
+//   }
+// };
