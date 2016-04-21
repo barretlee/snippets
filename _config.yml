@@ -1,5 +1,5 @@
 baseurl: /
-markdown: rdiscount
+markdown: kramdown
 permalink: /:year/:month/:day/:title/
 timezone: Asia/Shanghai
 
