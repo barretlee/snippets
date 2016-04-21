@@ -85,7 +85,7 @@ var Snippet = {
         self.showCode(url, title);
         window.location.hash = "#!" + url;
         var baseUrl = codebox.getAttribute("data-baseurl");
-        document.querySelector(".codebox .pen").setAttribute("href", baseUrl + url);
+        document.querySelector(".codebox .pen").setAttribute("href", (baseUrl + url).replace(/\/$/, '.md'));
       }
     });
     codebox.addEventListener("click", function(evt){
