@@ -765,7 +765,8 @@ div#ds-thread #ds-reset a.ds-like-thread-button {
   margin-right: 10px;
   overflow: hidden;
   height: 18px;
-  width: 46px;
+  width: 72px;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
 }
