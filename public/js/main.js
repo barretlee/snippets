@@ -107,6 +107,9 @@ var Snippet = {
       self.renderList(type);
     });
     addSnippet.addEventListener("click", function(evt){
+      // https://github.com/barretlee/snippets/issues/new
+      window.open('https://github.com/barretlee/snippets/issues/new');
+      return;
       if(evt.metaKey) {
         window.open(evt.target.getAttribute("href"));
         return;
