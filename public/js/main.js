@@ -253,7 +253,7 @@ var Snippet = {
       onreadystatechange = function(){
         if(readyState == 4) {
           self.updateProgress(Math.floor(Math.random() * 30) + 40);
-          self.cache[url] = "<h2>" + title + "</h2>" + marked(responseText.replace('```', '\n```'));
+          self.cache[url] = "<h2>" + title + "</h2>" + responseText;
           codectt.innerHTML = self.cache[url];
           var codes = codectt.querySelectorAll('pre code');
           for(var i = 0; i < codes.length; i++){
