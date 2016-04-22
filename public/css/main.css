@@ -770,3 +770,7 @@ div#ds-thread #ds-reset a.ds-like-thread-button {
   vertical-align: middle;
   text-align: center;
 }
+.github-star {
+  position: relative;
+  top: 5px;
+}
