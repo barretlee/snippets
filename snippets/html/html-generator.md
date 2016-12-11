@@ -11,7 +11,7 @@ title: HTML脚手架
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
     <meta name="description" content="">
-    <meta name="keyword" content="">
+    <meta name="keywords" content="">
     <title>DEMO</title>
     <link rel="stylesheet" href="example.css">
   </head>
