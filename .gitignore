@@ -5,3 +5,4 @@ node_modules/
 push.sh
 push.bat
 .jekyll-metadata
+del.js

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="utf-8" />
-	<title>{{ page.title }} | 小胡子哥的 snippet 分享</title>
-	<meta name="description" content="代码收藏夹，github 管理" />
-	<meta name="keywords" content="分享技术,分享生活,snippets,barretlee,小胡子哥" />
-	<meta name="email" content="{{site.email}}" />
-	<meta name="author" content="{{site.weibo}}" />
-  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=0">
-	<link rel="stylesheet" href="public/css/main.css" />
+<meta charset="utf-8" />
+<meta name="fragment" content="!">
+<title>{{ page.title }} | 小胡子哥的 snippet 分享</title>
+<meta name="description" content="小胡子哥的代码收藏夹，Snippets 管理工具" />
+<meta name="keywords" content="分享技术,分享生活,snippets,barretlee,小胡子哥" />
+<meta name="email" content="{{site.email}}" />
+<meta name="author" content="{{site.weibo}}" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=0">
+<link rel="stylesheet" href="public/css/main.css?v=1" />
+  {% seo title=false %}
 </head>
 
 <body>
@@ -16,29 +18,28 @@
   <div></div>
 </div>
 <div class="header">
-	<a href="{{site.base}}"><h1>Snippets</h1></a>
+  <a href="{{site.base}}"><h1>Snippets</h1></a>
   <span>代码片段收集板</span>
   <ul>
-    <li><a href="{{site.home}}/blog/tags/snippets/" target="_blank"><i class="icon">&#x263b;</i>相关阅读</a></li>
-    <li><a href="{{site.demo}}" target="_blank"><i class="icon">&#xe603;</i>DEMO中心</a></li>
-    <li class="forkbtn"><a href="https://github.com/barretlee/snippets" target="_blank"><i class="icon">&#x2603;</i>Fork代码</a></li>
+    <li class="forkbtn"><a href="https://github.com/barretlee/snippets/issues/new" target="_blank"><i class="icon">&#x2603;</i>添砖加瓦</a></li>
+    <li><a href="{{site.home}}" target="_blank"><i class="icon">&#x263b;</i>关于小胡子哥</a></li>
+    <li><iframe allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px" class="github-star" src="http://ghbtns.com/github-btn.html?user=barretlee&repo=snippets&type=watch&count=true&size=middle"></iframe></li>
   </ul>
 </div>
 <div class="container">
-	{{ content }}
+  {{ content }}
 
 <div class="ds-thread" data-thread-key="snippets" data-title="{{page.title}}" data-url="{{site.base}}{{page.url}}" >
-	<div class="ds-loading">
-		<img src="{{site.home}}/blogimgs/loading.gif" alt="loading..."/>
-		<p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
-	</div>
+  <div class="ds-loading">
+    <img src="{{site.home}}/blogimgs/loading.gif" alt="loading..."/>
+    <p>这网速真是弱爆了...客官稍等,评论还在加载~</p>
+  </div>
 </div>
 </div>
 <div class="footer">
-	<p>Copyright&copy; {{ 'now' | date: "%Y" }} Designed By <a href="{{site.home}}/about/" target="_blank">{{site.author}}</a> Build with <a target="_blank" href="http://jekyllrb.com/">jekyll</a></p>
+  <p>Copyright&copy; {{ 'now' | date: "%Y" }} Designed By <a href="{{site.home}}/about/" target="_blank">{{site.author}}</a> Build with <a target="_blank" href="http://jekyllrb.com/">jekyll</a></p>
 </div>
 <script src="public/js/hl.js"></script>
-<script src="public/js/markd.js"></script>
-<script src="public/js/main.js"></script>
+<script src="public/js/main.js?v=1"></script>
 </body>
 </html>

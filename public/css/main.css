@@ -754,3 +754,23 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     display: inline-block;
   }
 }
+
+div#ds-thread #ds-reset a.ds-like-thread-button {
+  position: relative;
+  z-index: 3;
+  line-height: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 4px 8px !important;
+  margin-right: 10px;
+  overflow: hidden;
+  height: 18px;
+  width: 72px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.github-star {
+  position: relative;
+  top: 5px;
+}

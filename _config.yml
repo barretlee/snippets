@@ -1,5 +1,5 @@
 baseurl: /
-markdown: rdiscount
+markdown: kramdown
 permalink: /:year/:month/:day/:title/
 timezone: Asia/Shanghai
 
@@ -13,3 +13,33 @@ author: 小胡子哥
 author_en: Barret Lee
 email: barret.china@gmail.com
 author_info: <a href="http://www.barretlee.com">小胡子哥</a>
+
+webrick:
+  headers:
+    Author: Barret Lee
+    About: http://barretlee.com/about/
+
+gems:
+  - jekyll-seo-tag
+#  - jekyll-feed
+
+# seo
+twitter:
+  username: barret_china
+logo: http://www.barretlee.com/avatar150.png
+
+# feed
+# feed:
+#   path: atom.xml
+#   name: Snippets
+#   description: 小胡子哥的代码收藏夹，Snippets 管理工具
+#   url: http://snippets.barretlee.com
+#   author: 小胡子哥
+
+defaults:
+  -
+    scope:
+      path: "snippets"
+      type: "posts"
+    values:
+      layout: nil

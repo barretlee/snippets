@@ -2,6 +2,13 @@
 layout: default
 title: Snippets
 ---
+
+<ul style="position:absolute;left:-9999px;">
+{% for item in site.pages %}<li><a href="#!{{ item.url }}">{{ item.title }}</a></li>
+<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+{% endfor %}
+</ul>
+
 <span href="{{site.new_path}}" class="add-snippet" target="_blank">+<b>添加 Snippet</b></span>
 <div class="search-mask"><i class="icon search-close" title="关闭">&#xe624;</i></div>
 <div class="codeTypes" id="codeTypes"></div>
@@ -21,7 +28,7 @@ title: Snippets
     </div>
 	</div>
 </div>
-<div class="commitCode" id="commitCode">
+<!--<div class="commitCode" id="commitCode">
   <iframe style="display:none;" id="ifr" name="ifr"></iframe>
   <form method="post" target="ifr" id="commitForm" class="commitForm"
     action="http://snippet-be.coding.io/post" enctype="multipart/form-data">
@@ -62,13 +69,10 @@ P.S：如果点击提交木有反应，应该是后端程序挂了，您可以�
     <input type="submit" value="提交" id="f_submit" /><b class="info">info</b>
   </form>
 </div>
+-->
+
 <script>
 var snippets = [
-{% for item in site.pages %}
-	{% assign type = item.dir | remove: '/snippets/' %}
-  {% if type != '/' %}
-		{ type: "{{ type }}", title: "{{ item.title }}", url: "{{ item.url }}" },
-  {% endif %}
-{% endfor %}
-{}].slice(0, -1);
+{% for item in site.pages %}{% assign type = item.dir | split: "/" %}  {% if type != '/' %}{ type: "{{ type[2] }}", title: "{{ item.title }}", url: "{{ item.url }}" },{% endif %}
+{% endfor %}{}].slice(0, -1);
 </script>
