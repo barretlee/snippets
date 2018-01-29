@@ -2,6 +2,22 @@
 title: Nginx 开启本地代理
 ---
 
+本地目录结构：
+
+```
+├── nginx
+│   ├── ca.crt
+│   ├── ca.srl
+│   ├── localhost_nopass.key
+│   ├── nginx.conf
+│   ├── nginx.log
+│   ├── server.crt
+│   ├── server.csr
+│   └── server.key
+```
+
+Nginx 配置：
+
 ```
 worker_processes auto;
 pid nginx.pid;
@@ -22,8 +38,6 @@ http {
         }
     }
 }
-
-
 ```
 
 `package.json` 的 script 增加：
