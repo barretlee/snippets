@@ -8,7 +8,6 @@ title: Nginx 开启本地代理
 ├── nginx
 │   ├── ca.crt
 │   ├── ca.srl
-│   ├── localhost_nopass.key
 │   ├── nginx.conf
 │   ├── nginx.log
 │   ├── server.crt
